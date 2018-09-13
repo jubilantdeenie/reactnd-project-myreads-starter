@@ -19,13 +19,19 @@ class BooksApp extends React.Component {
     })
   }
 
+  moveShelf = () => {
+
+  }
+
   render() {
     console.log(this.state.books)
     return (
       <div className="app">
         <SearchPage />
         <MainPage
-          books={this.state.books} />
+          books={this.state.books} 
+          moveShelf={this.moveShelf}
+          />
         </div>
         /* {this.state.showSearchPage ? (
           <div className="search-books">
